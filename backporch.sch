@@ -1,0 +1,737 @@
+EESchema Schematic File Version 4
+LIBS:backporch-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Backporch retroconsole output to RGBS + Scart"
+Date "2021-02-05"
+Rev "0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MD-90SM:MD-90SM J1
+U 1 1 60115F8A
+P 2050 1850
+F 0 "J1" H 1945 2617 50  0000 C CNN
+F 1 "MD-90SM" H 1945 2526 50  0000 C CNN
+F 2 "MD90:CUI_MD-90SM" H 2050 1850 50  0001 L BNN
+F 3 "" H 2050 1850 50  0001 L BNN
+F 4 "CP-2290-ND" H 2050 1850 50  0001 C CNN "Digi-key part number"
+F 5 "1.05" H 2050 1850 50  0001 L BNN "PARTREV"
+F 6 "Manufacturer Recommendation" H 2050 1850 50  0001 L BNN "STANDARD"
+F 7 "13.25 mm" H 2050 1850 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 8 "CUI Devices" H 2050 1850 50  0001 L BNN "MANUFACTURER"
+	1    2050 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 6011606E
+P 700 2350
+F 0 "#PWR0101" H 700 2100 50  0001 C CNN
+F 1 "GND" H 705 2177 50  0000 C CNN
+F 2 "" H 700 2350 50  0001 C CNN
+F 3 "" H 700 2350 50  0001 C CNN
+	1    700  2350
+	-1   0    0    -1  
+$EndComp
+Text GLabel 1650 1350 0    50   Input ~ 0
+BLUE_IN
+Text GLabel 1650 1550 0    50   Input ~ 0
+GREEN_IN
+Text GLabel 1650 1950 0    50   Input ~ 0
+RED_IN
+Text GLabel 1650 2050 0    50   Input ~ 0
+AUD_LEFT
+Text GLabel 1650 2150 0    50   Input ~ 0
+AUD_RIGHT
+Text GLabel 1650 1750 0    50   Input ~ 0
+CSYNC_IN
+$Comp
+L Connector:DB15_Female_HighDensity_MountingHoles J3
+U 1 1 60148CDD
+P 8200 2450
+F 0 "J3" H 8200 3317 50  0000 C CNN
+F 1 "DB15_Female_HighDensity_MountingHoles" H 8200 3226 50  0000 C CNN
+F 2 "Connector_Dsub:DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm" H 7250 2850 50  0001 C CNN
+F 3 " ~" H 7250 2850 50  0001 C CNN
+F 4 "AE11024-ND" H 8200 2450 50  0001 C CNN "Digi-key part number"
+F 5 "AHDF15A-KG-TAXB" H 8200 2450 50  0001 C CNN "Manufacturer Part Number"
+	1    8200 2450
+	1    0    0    -1  
+$EndComp
+Text GLabel 1650 3200 0    50   BiDi ~ 0
+AUD_RIGHT
+Text GLabel 1650 3300 0    50   BiDi ~ 0
+AUD_LEFT
+Text GLabel 1650 3400 0    50   BiDi ~ 0
+CSYNC_75
+Wire Wire Line
+	1650 3600 1050 3600
+$Comp
+L power:+5V #PWR03
+U 1 1 60148F1A
+P 1050 3600
+F 0 "#PWR03" H 1050 3450 50  0001 C CNN
+F 1 "+5V" H 1065 3773 50  0000 C CNN
+F 2 "" H 1050 3600 50  0001 C CNN
+F 3 "" H 1050 3600 50  0001 C CNN
+	1    1050 3600
+	-1   0    0    1   
+$EndComp
+Text GLabel 1650 3700 0    50   BiDi ~ 0
+BLUE_75
+Text GLabel 1650 3900 0    50   BiDi ~ 0
+RED_75
+$Comp
+L power:+5V #PWR04
+U 1 1 6014B006
+P 700 1450
+F 0 "#PWR04" H 700 1300 50  0001 C CNN
+F 1 "+5V" H 715 1623 50  0000 C CNN
+F 2 "" H 700 1450 50  0001 C CNN
+F 3 "" H 700 1450 50  0001 C CNN
+	1    700  1450
+	-1   0    0    -1  
+$EndComp
+Text GLabel 1650 3800 0    50   BiDi ~ 0
+GREEN_75
+Text GLabel 7900 2050 0    50   Output ~ 0
+RED_75
+Text GLabel 7900 2250 0    50   Output ~ 0
+GREEN_75
+Text GLabel 7900 2450 0    50   Output ~ 0
+BLUE_75
+Wire Wire Line
+	7900 1950 7400 1950
+Wire Wire Line
+	7900 2850 7400 2850
+Wire Wire Line
+	7900 2350 7400 2350
+Wire Wire Line
+	7900 2750 7400 2750
+Wire Wire Line
+	8200 3150 7400 3150
+Wire Wire Line
+	7400 1950 7400 2150
+Connection ~ 7400 2150
+Wire Wire Line
+	7400 2150 7400 2350
+Connection ~ 7400 2350
+Wire Wire Line
+	7400 2350 7400 2750
+Connection ~ 7400 2750
+Wire Wire Line
+	7400 2750 7400 2850
+Wire Wire Line
+	7400 2850 7400 3150
+$Comp
+L power:GND #PWR08
+U 1 1 6014B458
+P 7400 3150
+F 0 "#PWR08" H 7400 2900 50  0001 C CNN
+F 1 "GND" H 7405 2977 50  0000 C CNN
+F 2 "" H 7400 3150 50  0001 C CNN
+F 3 "" H 7400 3150 50  0001 C CNN
+	1    7400 3150
+	1    0    0    -1  
+$EndComp
+Connection ~ 7400 3150
+Text GLabel 8500 2450 2    50   Output ~ 0
+HSYNC_75
+$Comp
+L Device:R_Small R3
+U 1 1 6014BF26
+P 4600 1300
+F 0 "R3" V 4796 1300 50  0000 C CNN
+F 1 "75R" V 4705 1300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4600 1300 50  0001 C CNN
+F 3 "~" H 4600 1300 50  0001 C CNN
+F 4 "P75.0FCT-ND" H 4600 1300 50  0001 C CNN "Digi-key part number"
+	1    4600 1300
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4350 1300 0    50   Input ~ 0
+RED_IN
+$Comp
+L Device:CP_Small C4
+U 1 1 6014BF2E
+P 5000 1100
+F 0 "C4" V 5225 1100 50  0000 C CNN
+F 1 "330uF" V 5134 1100 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 5000 1100 50  0001 C CNN
+F 3 "~" H 5000 1100 50  0001 C CNN
+F 4 "493-1268-ND" H 5000 1100 50  0001 C CNN "Digi-key part number"
+	1    5000 1100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4700 1300 4900 1300
+Text GLabel 5150 1300 2    50   Input ~ 0
+RED_75
+Connection ~ 7400 2850
+$Comp
+L Device:R_Small R7
+U 1 1 6014D4A5
+P 5550 3550
+F 0 "R7" V 5746 3550 50  0000 C CNN
+F 1 "470R" V 5655 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5550 3550 50  0001 C CNN
+F 3 "~" H 5550 3550 50  0001 C CNN
+F 4 "P470FCT-ND" H 5550 3550 50  0001 C CNN "Digi-key part number"
+	1    5550 3550
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5650 3550 2    50   Input ~ 0
+CSYNC_75
+Wire Wire Line
+	4900 1500 4900 1300
+Wire Wire Line
+	5100 1500 5100 1300
+Wire Wire Line
+	5100 1300 5150 1300
+$Comp
+L Device:R_Small R4
+U 1 1 6014F164
+P 4600 2100
+F 0 "R4" V 4796 2100 50  0000 C CNN
+F 1 "75R" V 4705 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4600 2100 50  0001 C CNN
+F 3 "~" H 4600 2100 50  0001 C CNN
+F 4 "P75.0FCT-ND" H 4600 2100 50  0001 C CNN "Digi-key part number"
+	1    4600 2100
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4350 2100 0    50   Input ~ 0
+GREEN_IN
+$Comp
+L Device:CP_Small C6
+U 1 1 6014F16B
+P 5000 1900
+F 0 "C6" V 5225 1900 50  0000 C CNN
+F 1 "330uF" V 5134 1900 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 5000 1900 50  0001 C CNN
+F 3 "~" H 5000 1900 50  0001 C CNN
+F 4 "493-1268-ND" H 5000 1900 50  0001 C CNN "Digi-key part number"
+	1    5000 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4700 2100 4900 2100
+Text GLabel 5150 2100 2    50   Input ~ 0
+GREEN_75
+Wire Wire Line
+	4900 2300 4900 2100
+Wire Wire Line
+	5100 2300 5100 2100
+Wire Wire Line
+	5100 2100 5150 2100
+$Comp
+L Device:R_Small R5
+U 1 1 6014F895
+P 4600 2900
+F 0 "R5" V 4796 2900 50  0000 C CNN
+F 1 "75R" V 4705 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4600 2900 50  0001 C CNN
+F 3 "~" H 4600 2900 50  0001 C CNN
+F 4 "P75.0FCT-ND" H 4600 2900 50  0001 C CNN "Digi-key part number"
+	1    4600 2900
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4350 2900 0    50   Input ~ 0
+BLUE_IN
+$Comp
+L Device:CP_Small C8
+U 1 1 6014F89C
+P 5000 2700
+F 0 "C8" V 5225 2700 50  0000 C CNN
+F 1 "330uF" V 5134 2700 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 5000 2700 50  0001 C CNN
+F 3 "~" H 5000 2700 50  0001 C CNN
+F 4 "493-1268-ND" H 5000 2700 50  0001 C CNN "Digi-key part number"
+	1    5000 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4700 2900 4900 2900
+Text GLabel 5150 2900 2    50   Input ~ 0
+BLUE_75
+Wire Wire Line
+	4900 3100 4900 2900
+Wire Wire Line
+	5100 3100 5100 2900
+Wire Wire Line
+	5100 2900 5150 2900
+$Comp
+L Device:R_Small R6
+U 1 1 601501F4
+P 4600 3750
+F 0 "R6" V 4796 3750 50  0000 C CNN
+F 1 "75R" V 4705 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4600 3750 50  0001 C CNN
+F 3 "~" H 4600 3750 50  0001 C CNN
+F 4 "P75.0FCT-ND" H 4600 3750 50  0001 C CNN "Digi-key part number"
+	1    4600 3750
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4350 3750 0    50   Input ~ 0
+CSYNC_IN
+$Comp
+L Device:CP_Small C10
+U 1 1 601501FB
+P 5000 3550
+F 0 "C10" V 5225 3550 50  0000 C CNN
+F 1 "330uF" V 5134 3550 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 5000 3550 50  0001 C CNN
+F 3 "~" H 5000 3550 50  0001 C CNN
+F 4 "493-1268-ND" H 5000 3550 50  0001 C CNN "Digi-key part number"
+	1    5000 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4700 3750 4900 3750
+Wire Wire Line
+	4900 3950 4900 3750
+$Comp
+L Device:C_Small C7
+U 1 1 601546FF
+P 5000 2300
+F 0 "C7" V 4771 2300 50  0000 C CNN
+F 1 "0.1uF" V 4862 2300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5000 2300 50  0001 C CNN
+F 3 "~" H 5000 2300 50  0001 C CNN
+F 4 "399-1259-1-ND" H 5000 2300 50  0001 C CNN "Digi-key part number"
+	1    5000 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 6015492D
+P 5000 1500
+F 0 "C5" V 4771 1500 50  0000 C CNN
+F 1 "0.1uF" V 4862 1500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5000 1500 50  0001 C CNN
+F 3 "~" H 5000 1500 50  0001 C CNN
+F 4 "399-1259-1-ND" H 5000 1500 50  0001 C CNN "Digi-key part number"
+	1    5000 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 6015497D
+P 5000 3100
+F 0 "C9" V 4771 3100 50  0000 C CNN
+F 1 "0.1uF" V 4862 3100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5000 3100 50  0001 C CNN
+F 3 "~" H 5000 3100 50  0001 C CNN
+F 4 "399-1259-1-ND" H 5000 3100 50  0001 C CNN "Digi-key part number"
+	1    5000 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C11
+U 1 1 601549DD
+P 5000 3950
+F 0 "C11" V 4771 3950 50  0000 C CNN
+F 1 "0.1uF" V 4862 3950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5000 3950 50  0001 C CNN
+F 3 "~" H 5000 3950 50  0001 C CNN
+F 4 "399-1259-1-ND" H 5000 3950 50  0001 C CNN "Digi-key part number"
+	1    5000 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L EL1883ISZ:EL1883ISZ U1
+U 1 1 60155081
+P 5050 5250
+F 0 "U1" H 5050 5720 50  0000 C CNN
+F 1 "EL1883ISZ" H 5050 5629 50  0001 C CNN
+F 2 "EL1883ISZ:SOIC127P600X175-8N" H 5050 5250 50  0001 L BNN
+F 3 "" H 5050 5250 50  0001 L BNN
+F 4 "EL1883ISZ-ND" H 5050 5250 50  0001 C CNN "Digi-key part number"
+F 5 "1561942" H 5050 5250 50  0001 L BNN "OC_FARNELL"
+F 6 "61J5568" H 5050 5250 50  0001 L BNN "OC_NEWARK"
+F 7 "EL1883ISZ" H 5050 5250 50  0001 L BNN "MPN"
+F 8 "8-SOIC" H 5050 5250 50  0001 L BNN "PACKAGE"
+F 9 "Intersil" H 5050 5250 50  0001 L BNN "SUPPLIER"
+	1    5050 5250
+	1    0    0    -1  
+$EndComp
+Text GLabel 8550 4950 2    50   Output ~ 0
+HSYNC_75
+$Comp
+L Device:C_Small C1
+U 1 1 60155E18
+P 700 5500
+F 0 "C1" H 792 5546 50  0000 L CNN
+F 1 "0.1uF" H 792 5455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 700 5500 50  0001 C CNN
+F 3 "~" H 700 5500 50  0001 C CNN
+F 4 "399-1259-1-ND" H 700 5500 50  0001 C CNN "Digi-key part number"
+	1    700  5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 60155F2B
+P 700 5600
+F 0 "#PWR02" H 700 5350 50  0001 C CNN
+F 1 "GND" H 705 5427 50  0000 C CNN
+F 2 "" H 700 5600 50  0001 C CNN
+F 3 "" H 700 5600 50  0001 C CNN
+	1    700  5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 60155FF4
+P 700 5400
+F 0 "#PWR01" H 700 5250 50  0001 C CNN
+F 1 "+5V" H 715 5573 50  0000 C CNN
+F 2 "" H 700 5400 50  0001 C CNN
+F 3 "" H 700 5400 50  0001 C CNN
+	1    700  5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR07
+U 1 1 6015604E
+P 2950 5150
+F 0 "#PWR07" H 2950 5000 50  0001 C CNN
+F 1 "+5V" H 2965 5323 50  0000 C CNN
+F 2 "" H 2950 5150 50  0001 C CNN
+F 3 "" H 2950 5150 50  0001 C CNN
+	1    2950 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 6015608F
+P 2250 6100
+F 0 "#PWR06" H 2250 5850 50  0001 C CNN
+F 1 "GND" H 2255 5927 50  0000 C CNN
+F 2 "" H 2250 6100 50  0001 C CNN
+F 3 "" H 2250 6100 50  0001 C CNN
+	1    2250 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 6015734A
+P 2250 5550
+F 0 "C2" H 2342 5596 50  0000 L CNN
+F 1 "0.1uF" H 2342 5505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2250 5550 50  0001 C CNN
+F 3 "~" H 2250 5550 50  0001 C CNN
+F 4 "399-1259-1-ND" H 2250 5550 50  0001 C CNN "Digi-key part number"
+	1    2250 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 60157A66
+P 2650 5550
+F 0 "R2" H 2709 5596 50  0000 L CNN
+F 1 "681kR" H 2709 5505 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2650 5550 50  0001 C CNN
+F 3 "~" H 2650 5550 50  0001 C CNN
+F 4 "P681KFCT-ND" H 2650 5550 50  0001 C CNN "Digi-key part number"
+	1    2650 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 5450 2650 5450
+Connection ~ 2650 5450
+Wire Wire Line
+	2650 5450 2250 5450
+Connection ~ 4900 1300
+Wire Wire Line
+	4900 1300 4900 1100
+Connection ~ 5100 1300
+Wire Wire Line
+	5100 1300 5100 1100
+Connection ~ 5100 2100
+Wire Wire Line
+	5100 2100 5100 1900
+Connection ~ 4900 2100
+Wire Wire Line
+	4900 2100 4900 1900
+Connection ~ 5100 2900
+Wire Wire Line
+	5100 2900 5100 2700
+Connection ~ 4900 2900
+Wire Wire Line
+	4900 2900 4900 2700
+Connection ~ 4900 3750
+Wire Wire Line
+	4900 3750 4900 3550
+Connection ~ 5100 3750
+Wire Wire Line
+	5100 3750 5100 3550
+Wire Wire Line
+	5100 3950 5100 3750
+Wire Wire Line
+	5100 3750 5250 3750
+$Comp
+L Device:C_Small C3
+U 1 1 60162096
+P 2650 5350
+F 0 "C3" V 2421 5350 50  0000 C CNN
+F 1 "0.1uF" V 2512 5350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2650 5350 50  0001 C CNN
+F 3 "~" H 2650 5350 50  0001 C CNN
+F 4 "399-1259-1-ND" H 2650 5350 50  0001 C CNN "Digi-key part number"
+	1    2650 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2750 5350 2950 5350
+$Comp
+L Device:R_Small R1
+U 1 1 60168C4E
+P 1250 5900
+F 0 "R1" H 1309 5946 50  0000 L CNN
+F 1 "75R" H 1309 5855 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1250 5900 50  0001 C CNN
+F 3 "~" H 1250 5900 50  0001 C CNN
+F 4 "P75.0FCT-ND" H 1250 5900 50  0001 C CNN "Digi-key part number"
+	1    1250 5900
+	1    0    0    -1  
+$EndComp
+Text GLabel 1250 5350 1    50   Input ~ 0
+CSYNC_75
+$Comp
+L Device:R_Small R8
+U 1 1 6016E6AA
+P 8450 4950
+F 0 "R8" V 8254 4950 50  0000 C CNN
+F 1 "75R" V 8345 4950 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8450 4950 50  0001 C CNN
+F 3 "~" H 8450 4950 50  0001 C CNN
+F 4 "P75.0FCT-ND" H 8450 4950 50  0001 C CNN "Digi-key part number"
+	1    8450 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP1
+U 1 1 60170890
+P 5400 3750
+F 0 "JP1" V 5354 3818 50  0000 L CNN
+F 1 "EL 1883 bypass" V 5445 3818 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 5400 3750 50  0001 C CNN
+F 3 "~" H 5400 3750 50  0001 C CNN
+	1    5400 3750
+	0    1    1    0   
+$EndComp
+Text GLabel 5650 3950 2    50   Output ~ 0
+HSYNC_75
+Wire Wire Line
+	5400 3950 5650 3950
+Text GLabel 8100 4250 2    50   Output ~ 0
+AUD_LEFT
+Text GLabel 8100 4050 2    50   Output ~ 0
+AUD_RIGHT
+$Comp
+L power:GND #PWR0102
+U 1 1 601CA2EA
+P 8100 3850
+F 0 "#PWR0102" H 8100 3600 50  0001 C CNN
+F 1 "GND" H 8105 3677 50  0000 C CNN
+F 2 "" H 8100 3850 50  0001 C CNN
+F 3 "" H 8100 3850 50  0001 C CNN
+	1    8100 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L MD-80SM:MD-80SM J2
+U 1 1 601DBBF9
+P 2050 3600
+F 0 "J2" H 2280 3596 50  0000 L CNN
+F 1 "MD-80SM" H 2280 3505 50  0000 L CNN
+F 2 "MD80:CUI_MD-80SM" H 2050 3600 50  0001 L BNN
+F 3 "" H 2050 3600 50  0001 L BNN
+F 4 "CP-2280-ND" H 2050 3600 50  0001 C CNN "Digi-key part number"
+F 5 "1.05" H 2050 3600 50  0001 L BNN "PARTREV"
+F 6 "13.05 mm" H 2050 3600 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 7 "CUI Devices" H 2050 3600 50  0001 L BNN "MANUFACTURER"
+F 8 "Manufacturer Recommendation" H 2050 3600 50  0001 L BNN "STANDARD"
+	1    2050 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  3500 700  4100
+$Comp
+L power:GND #PWR0103
+U 1 1 601ECDF9
+P 700 4100
+F 0 "#PWR0103" H 700 3850 50  0001 C CNN
+F 1 "GND" H 705 3927 50  0000 C CNN
+F 2 "" H 700 4100 50  0001 C CNN
+F 3 "" H 700 4100 50  0001 C CNN
+	1    700  4100
+	1    0    0    -1  
+$EndComp
+Connection ~ 700  4100
+NoConn ~ 8500 2050
+NoConn ~ 8500 2250
+NoConn ~ 7900 2550
+NoConn ~ 7900 2650
+NoConn ~ 8500 2850
+NoConn ~ 1650 1650
+NoConn ~ 1650 1850
+NoConn ~ 7150 5350
+Wire Wire Line
+	700  1450 1000 1450
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 601FE376
+P 1000 1450
+F 0 "#FLG0101" H 1000 1525 50  0001 C CNN
+F 1 "PWR_FLAG" H 1000 1624 50  0000 C CNN
+F 2 "" H 1000 1450 50  0001 C CNN
+F 3 "~" H 1000 1450 50  0001 C CNN
+	1    1000 1450
+	1    0    0    -1  
+$EndComp
+Connection ~ 1000 1450
+Wire Wire Line
+	1000 1450 1650 1450
+Wire Wire Line
+	700  2350 1000 2350
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 6020001A
+P 1000 2350
+F 0 "#FLG0102" H 1000 2425 50  0001 C CNN
+F 1 "PWR_FLAG" H 1000 2523 50  0000 C CNN
+F 2 "" H 1000 2350 50  0001 C CNN
+F 3 "~" H 1000 2350 50  0001 C CNN
+	1    1000 2350
+	-1   0    0    1   
+$EndComp
+Connection ~ 1000 2350
+Wire Wire Line
+	1000 2350 1650 2350
+Wire Wire Line
+	700  3500 1650 3500
+Wire Wire Line
+	700  4100 1650 4100
+Wire Wire Line
+	5400 3550 5450 3550
+Wire Wire Line
+	4350 1300 4500 1300
+Wire Wire Line
+	4350 2900 4500 2900
+Wire Wire Line
+	4350 3750 4500 3750
+Wire Wire Line
+	4350 2100 4500 2100
+$Comp
+L Jumper:SolderJumper_2_Bridged JP2
+U 1 1 601E025A
+P 1250 5500
+F 0 "JP2" H 1250 5705 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 1250 5614 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 1250 5500 50  0001 C CNN
+F 3 "~" H 1250 5500 50  0001 C CNN
+	1    1250 5500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1250 5350 2550 5350
+Wire Wire Line
+	2250 6100 2250 5650
+Connection ~ 2250 6100
+Wire Wire Line
+	2250 6100 2650 6100
+Wire Wire Line
+	2650 5650 2650 6100
+Wire Wire Line
+	2650 6100 2950 6100
+Wire Wire Line
+	2950 6100 2950 5650
+Connection ~ 2650 6100
+Wire Wire Line
+	1250 5650 1250 5800
+Wire Wire Line
+	1250 6000 1250 6100
+Wire Wire Line
+	1250 6100 2250 6100
+$Comp
+L 35RAPC4BH3:35RAPC4BH3 J4
+U 1 1 601E59A1
+P 7750 4050
+F 0 "J4" H 7793 4428 50  0000 C CNN
+F 1 "35RAPC4BH3" H 7793 4337 50  0000 C CNN
+F 2 "35RAPC4BH3:SWITCHCRAFT_35RAPC4BH3" H 7750 4050 50  0001 L BNN
+F 3 "" H 7750 4050 50  0001 L BNN
+F 4 "SC1464-ND" H 7750 4050 50  0001 C CNN "Digi-key part number"
+F 5 "Manufacturer Recommendations" H 7750 4050 50  0001 L BNN "STANDARD"
+F 6 "J" H 7750 4050 50  0001 L BNN "PARTREV"
+F 7 "Switchcraft Inc." H 7750 4050 50  0001 L BNN "MANUFACTURER"
+F 8 "6.1214mm" H 7750 4050 50  0001 L BNN "MAXIMUM_PACKAGE_HIEGHT"
+	1    7750 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 4150 8050 4250
+Wire Wire Line
+	8050 3950 8050 4050
+Wire Wire Line
+	8050 4050 8100 4050
+Connection ~ 8050 4050
+Wire Wire Line
+	8050 4250 8100 4250
+Connection ~ 8050 4250
+Wire Wire Line
+	8050 3850 8100 3850
+Wire Wire Line
+	7900 2150 7400 2150
+Text GLabel 8500 2650 2    50   Output ~ 0
+VSYNC_75
+$Comp
+L Device:R_Small R9
+U 1 1 60230196
+P 8450 5350
+F 0 "R9" V 8254 5350 50  0000 C CNN
+F 1 "75R" V 8345 5350 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8450 5350 50  0001 C CNN
+F 3 "~" H 8450 5350 50  0001 C CNN
+F 4 "P75.0FCT-ND" H 8450 5350 50  0001 C CNN "Digi-key part number"
+	1    8450 5350
+	0    1    1    0   
+$EndComp
+Text GLabel 8550 5350 2    50   Output ~ 0
+VSYNC_75
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP3
+U 1 1 60238E33
+P 7800 4950
+F 0 "JP3" V 7754 5018 50  0000 L CNN
+F 1 "CSYNC/HSYNC" H 7845 5018 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 7800 4950 50  0001 C CNN
+F 3 "~" H 7800 4950 50  0001 C CNN
+	1    7800 4950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7150 5150 7150 4750
+Wire Wire Line
+	7150 4750 7800 4750
+Wire Wire Line
+	7950 4950 8350 4950
+Wire Wire Line
+	7150 5450 7800 5450
+Wire Wire Line
+	7800 5450 7800 5150
+Wire Wire Line
+	8350 5350 8350 5250
+Wire Wire Line
+	8350 5250 7150 5250
+$EndSCHEMATC
