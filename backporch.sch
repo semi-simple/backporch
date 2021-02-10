@@ -734,4 +734,37 @@ Wire Wire Line
 	8350 5350 8350 5250
 Wire Wire Line
 	8350 5250 7150 5250
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 60234506
+P 5450 6750
+F 0 "H1" H 5550 6796 50  0000 L CNN
+F 1 "MountingHole" H 5550 6705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 5450 6750 50  0001 C CNN
+F 3 "~" H 5450 6750 50  0001 C CNN
+	1    5450 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 60236289
+P 5450 7000
+F 0 "H2" H 5550 7046 50  0000 L CNN
+F 1 "MountingHole" H 5550 6955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 5450 7000 50  0001 C CNN
+F 3 "~" H 5450 7000 50  0001 C CNN
+	1    5450 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 602362FD
+P 5450 7250
+F 0 "H3" H 5550 7296 50  0000 L CNN
+F 1 "MountingHole" H 5550 7205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 5450 7250 50  0001 C CNN
+F 3 "~" H 5450 7250 50  0001 C CNN
+	1    5450 7250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
