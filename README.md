@@ -123,6 +123,10 @@ You can order the board directly from Oshpark
 [here](https://oshpark.com/shared_projects/N2HBVdJT) or download the Gerber
 files from them and send those to your favorite manufacturer.
 
+You can order the needed components by using this
+[BOM file](generated/backporch_bom.csv). If you order from Digi-Key, you can
+simply upload this file to them.
+
 ## FAQ
 
 * What does the name mean?

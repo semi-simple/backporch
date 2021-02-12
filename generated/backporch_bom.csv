@@ -1,0 +1,11 @@
+Component,Part,Description,References,Value,Quantity Per PCB,Digi-key part number
+1,C_Small,"Unpolarized capacitor, small symbol",C1 C2 C3 C5 C7 C9 C11,0.1uF,7,399-1259-1-ND
+2,CP_Small,"Polarized capacitor, small symbol",C4 C6 C8 C10,330uF,4,493-1268-ND
+3,35RAPC4BH3,,J4,35RAPC4BH3,1,SC1464-ND
+4,DB15_Female_HighDensity_MountingHoles,"15-pin female D-SUB connector, High density (3 columns), Triple Row, Generic, VGA-connector, Mounting Hole",J3,DB15_Female_HighDensity_MountingHoles,1,AE11024-ND
+5,MD-80SM,,J2,MD-80SM,1,CP-2280-ND
+6,MD-90SM,,J1,MD-90SM,1,CP-2290-ND
+7,R_Small,"Resistor, small symbol",R1 R3 R4 R5 R6 R8 R9,75R,7,P75.0FCT-ND
+8,R_Small,"Resistor, small symbol",R7,470R,1,P470FCT-ND
+9,R_Small,"Resistor, small symbol",R2,681kR,1,P681KFCT-ND
+10,EL1883ISZ,,U1,EL1883ISZ,1,EL1883ISZ-ND
