@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Backporch retroconsole output to RGBS + Scart"
-Date "2021-02-05"
-Rev "0"
+Date "2021-02-23"
+Rev "0.2"
 Comp ""
 Comment1 "https://github.com/semi-simple/backporch"
 Comment2 ""
@@ -70,20 +70,20 @@ Text GLabel 1650 3200 0    50   BiDi ~ 0
 AUD_RIGHT
 Text GLabel 1650 3300 0    50   BiDi ~ 0
 AUD_LEFT
-Text GLabel 1650 3400 0    50   BiDi ~ 0
+Text GLabel 1650 3600 0    50   BiDi ~ 0
 CSYNC_75
 Wire Wire Line
-	1650 3600 1050 3600
+	1650 3400 1050 3400
 $Comp
 L power:+5V #PWR03
 U 1 1 60148F1A
-P 1050 3600
-F 0 "#PWR03" H 1050 3450 50  0001 C CNN
-F 1 "+5V" H 1065 3773 50  0000 C CNN
-F 2 "" H 1050 3600 50  0001 C CNN
-F 3 "" H 1050 3600 50  0001 C CNN
-	1    1050 3600
-	-1   0    0    1   
+P 1050 3400
+F 0 "#PWR03" H 1050 3250 50  0001 C CNN
+F 1 "+5V" H 1065 3573 50  0000 C CNN
+F 2 "" H 1050 3400 50  0001 C CNN
+F 3 "" H 1050 3400 50  0001 C CNN
+	1    1050 3400
+	1    0    0    -1  
 $EndComp
 Text GLabel 1650 3700 0    50   BiDi ~ 0
 BLUE_75
