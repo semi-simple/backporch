@@ -13,8 +13,12 @@ cable.
 It is also possible to use Backporch to adapt any SCART cable into a TTL sync
 output suitable for PVMs.
 
-Backporch includes the necessary resistors, coupling caps and a sync stripper / sync
-booster for an excellent sync signal.
+Backporch includes the necessary resistors, coupling caps and a sync stripper /
+sync booster ([Renesas
+EL1883ISZ](https://www.renesas.com/us/en/products/analog-products/audio-video/video-ics/video-sync-separators/el1883-sync-separator-horizontal-output)),
+for an excellent sync signal. Schematics [here](generated/schematics.pdf).
+
+![Image of Backporch](generated/backporch-0.1.jpg)
 
 ## Inputs
 
