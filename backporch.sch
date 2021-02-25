@@ -59,7 +59,7 @@ U 1 1 60148CDD
 P 8200 2450
 F 0 "J3" H 8200 3317 50  0000 C CNN
 F 1 "DB15_Female_HighDensity_MountingHoles" H 8200 3226 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm" H 7250 2850 50  0001 C CNN
+F 2 "VGA-from-OSSC:VGA_CONN" H 7250 2850 50  0001 C CNN
 F 3 " ~" H 7250 2850 50  0001 C CNN
 F 4 "AE11024-ND" H 8200 2450 50  0001 C CNN "Digi-key part number"
 F 5 "AHDF15A-KG-TAXB" H 8200 2450 50  0001 C CNN "Manufacturer Part Number"

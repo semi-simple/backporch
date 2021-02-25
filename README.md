@@ -120,7 +120,7 @@ them very short. Proper VGA cables used from Backporch output can be long.
 ## Ordering the board
 
 You can order the board directly from Oshpark
-[here](https://oshpark.com/shared_projects/Td0uFtCx) or download the Gerber
+[here](https://oshpark.com/shared_projects/ucGxCRGp) or download the Gerber
 files from them and send those to your favorite manufacturer.
 
 You can order the needed components by using this
