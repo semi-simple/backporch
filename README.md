@@ -10,6 +10,9 @@ PVMs and Extron matrices can be connected with a simple VGA to BNC or VGA to
 VGA cable. SCART TVs can be connected with a component-free Mini-DIN 8 to SCART
 cable.
 
+It is also possible to use Backporch to adapt any SCART cable into a TTL sync
+output suitable for PVMs.
+
 Backporch includes the necessary resistors, coupling caps and a sync stripper / sync
 booster for an excellent sync signal.
 
@@ -21,9 +24,13 @@ There are two inputs:
   a video amplifier to the back of the console.  Cables for such consoles
 typically have impedence matching resistors as well as coupling capacitors.
 
-* The (mini) DIN 8 connector (also usable as output) is suitable for consoles
-  that have adequate components inside the console and are ready to be
-connected to a SCART. This mainly include retro mods such as the NES RGB.
+* The (mini) DIN 8 connector (also usable as output) can be used to turn any
+  existing SCART setup into a TTL sync setup suitable for PVMs. All one needs
+is a simple passive SCART to (mini) DIN 8 cable such as the ones compatible
+with the Framemeister XRGB mini.
+
+It also can be used directly as input with a staight DIN 8 cable for consoles
+that have retro mods, such as the NES RGB mod or some superguns.
 
 ## Outputs
 
@@ -36,8 +43,8 @@ jumper.
 
 * The (mini) DIN 8 connector (also usable as input) is suitable for SCART
   output using a widely available mini DIN 8 to SCART cable. This output can
-also be used to connect to a Framemeister XRGB mini with a simple mini DIN 8
-cable.
+also be used to connect directly to a Framemeister XRGB mini with a simple mini
+DIN 8 cable.
 
 Jumpers:
 
@@ -81,13 +88,16 @@ bypass board to output 75 Ohm CSYNC.
   coupling capacitors (things will work without them, but this setup might draw
 excessive current from the video amplifiers).
 
+Of course, if you already have a SCART cable for your Super Nintendo, you can
+still use Backporch to [restore TTL sync and plug it to a PVM](#anything-else).
+
 ### PC Engine with SSDS3
 
-* Same as Mega-Drive / Genesis 2.
+* Same as [Sega Mega-Drive / Genesis 2](#sega-mega-drive--genesis-2).
 
 ### Neo Geo AES
 
-* Build a simple passive cable from the Neo geo DIN8 to standard Mini DIN 8
+* Build a simple passive cable from the Neo Geo DIN8 to standard Mini DIN 8
 
 ### Neo Geo MVS
 
@@ -138,7 +148,7 @@ reference to the blanking interval after the sync pulse in video signals.
 
 Maybe not. For many inputs, if you know what you're doing, you can remove
 all components related to sync stripping and use JP1 to send sync directly to
-HSYNC on the HD-15 port. For THS737X mods ("RGB bypass"), coupling capacitors
+HSYNC on the DE-15 port. For THS737X mods ("RGB bypass"), coupling capacitors
 are not needed. Remove the big electrolytic capacitors and bridge the footprint
 of the small ones.
 
