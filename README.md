@@ -52,12 +52,12 @@ DIN 8 cable.
 
 Jumpers:
 
-* JP1: Solder pad 1 and 2 together (keep the 2-3 connection open)
+* JP1: Solder pad 1 (arrow) and 2 together (keep the 2-3 connection open)
 * JP2: keep open for normal operation. If you never want to use the Mini DIN 8
   as an output, or if you're having sync issues, short it.
 * JP3: Solder pad 2 and 3 together for an RGBS output with composite sync
-  (CSYNC), or pad 1 and 2 instead for a RGBHV output with separate HSYNC and
-VSYNC.
+  (CSYNC), or pad 1 (arrow) and 2 instead for a RGBHV output with separate
+HSYNC and VSYNC.
 
 ## Supported consoles
 
@@ -134,7 +134,7 @@ them very short. Proper VGA cables used from Backporch output can be long.
 ## Ordering the board
 
 You can order the board directly from Oshpark
-[here](https://oshpark.com/shared_projects/ucGxCRGp) or download the Gerber
+[here](https://oshpark.com/shared_projects/adF28fFL) or download the Gerber
 files from them and send those to your favorite manufacturer.
 
 You can order the needed components by using this
