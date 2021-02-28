@@ -15,7 +15,9 @@ output suitable for PVMs.
 
 Backporch includes the necessary resistors, coupling caps and a sync stripper /
 sync booster ([Renesas
-EL1883ISZ](https://www.renesas.com/us/en/products/analog-products/audio-video/video-ics/video-sync-separators/el1883-sync-separator-horizontal-output)),
+EL1883](https://www.renesas.com/us/en/products/analog-products/audio-video/video-ics/video-sync-separators/el1883-sync-separator-horizontal-output)
+or [Renesas
+ISL59885](https://www.renesas.com/us/en/products/analog-products/audio-video/video-ics/video-sync-separators/isl59885-auto-adjusting-sync-separator-hd-and-sd-video))
 for an excellent sync signal. Schematics [here](generated/schematics.pdf).
 
 ![Image of Backporch](generated/backporch-0.1.jpg)
@@ -162,3 +164,8 @@ The DE-15 input (AV3) on the OSSC does not have a proper low-pass filter. You ca
 use the SCART input instead, or you can route the RGB lines to AV2 instead (via
 BNC/RCA adaptors and VGA/BNC breakout cables) and use the "AV3 use alt. RGB"
 option on the OSSC.
+
+* I like the Renesas ISL59885 chip better. Could I use it instead?
+
+You're in luck: it works as a drop-in replacement for U1. Just keep R2
+unpopulated and replace C2 with a 56nF X7R grade capacitor.
