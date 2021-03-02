@@ -72,11 +72,14 @@ HSYNC and VSYNC.
 
 ### Sega Mega-Drive / Genesis 2
 
-* Use a simple mini DIN 9 to mini DIN 9 cable. Sega 32X cables work well, but
-  all pins need to be connected. Note that *proper* 32X cables don't have PIN
-2 (5V) connected. Most "cheap" cables on Ebay have all pins connected.
+* Use a simple mini DIN 9 to mini DIN 9 cable.
 
-* You can use cables without PIN 2 if you don't solder U1 and change JP1.
+Sega 32X cables work well, but all pins need to be connected. Some
+high quality, proper 32X cables don't have PIN 2 (5V) connected. Most "cheap"
+cables on Ebay have all pins connected. Some bad cables don't have ground
+connected.
+
+(You can use cables without PIN 2 if you don't solder U1 and change JP1)
 
 ### Sega Mega-Drive / Genesis 1
 
@@ -97,7 +100,10 @@ excessive current from the video amplifiers).
 Of course, if you already have a SCART cable for your Super Nintendo, you can
 still use Backporch to [restore TTL sync and plug it to a PVM](#anything-else).
 
-### PC Engine with SSDS3
+### PC Engine/ TurboGrafx-16
+
+Either with Terraonion's SSDS3, Insurrection Industries' Spark Plug or the db
+GrafxBooster TTP:
 
 * Same as [Sega Mega-Drive / Genesis 2](#sega-mega-drive--genesis-2).
 
@@ -119,10 +125,10 @@ stripper / booster to connect to a PVM or an Extron matrix, you can use any
 SCART to mini DIN 8 cable, such as the ones used for the Framemeister XRGB
 mini.
 
-## Proper cable hygiene
+## Getting good cables
 
-Ideally, proper analog video transmission should happens over 75 Ohm coaxial.
-[Proper impedence
+Ideally, proper analog video transmission should happens over 75 Ohm coaxial
+cables.  [Proper impedence
 matching](https://en.wikipedia.org/wiki/Impedance_matching#Transmission_lines)
 requires a 75 Ohm resistor at the source and a 75 Ohm resistor at the
 destination. This is why many retro-gaming cables that have resistors meant for
@@ -131,7 +137,12 @@ frequencies used in classic gaming console signals, this only really matters
 for very long cables though.
 
 You should strive to use high quality shielded cables to Backporch and keep
-them very short. Proper VGA cables used from Backporch output can be long.
+them short. If only one of those properties holds true, you should still be
+fine. Properly shielded 75 Ohm cables used from Backporch's outputs can be
+long.
+
+Use [this issue](https://github.com/semi-simple/backporch/issues/1) for a
+discussion of where to source good cables.
 
 ## Ordering the board
 
