@@ -1,0 +1,45 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# 35RAPC4BH3
+#
+DEF 35RAPC4BH3 J 0 40 Y N 1 L N
+F0 "J" -200 300 50 H V L BNN
+F1 "35RAPC4BH3" -200 -300 50 H V L BNN
+F2 "SWITCHCRAFT_35RAPC4BH3" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "Manufacturer Recommendations" 0 0 50 H I L BNN "STANDARD"
+F5 "J" 0 0 50 H I L BNN "PARTREV"
+F6 "Switchcraft Inc." 0 0 50 H I L BNN "MANUFACTURER"
+F7 "6.1214mm" 0 0 50 H I L BNN "MAXIMUM_PACKAGE_HIEGHT"
+DRAW
+P 2 0 0 10 200 200 -200 200 N
+P 2 0 0 10 200 100 -50 100 N
+P 2 0 0 10 200 -200 10 -200 N
+P 2 0 0 10 -200 200 -200 95 N
+P 2 0 0 10 -200 95 -175 95 N
+P 2 0 0 10 -175 95 -175 -90 N
+P 2 0 0 10 -175 -90 -225 -90 N
+P 2 0 0 10 -225 -90 -225 95 N
+P 2 0 0 10 -225 95 -200 95 N
+P 2 0 0 10 -50 100 -75 45 N
+P 2 0 0 10 -75 45 -100 100 N
+P 2 0 0 10 10 -200 -15 -145 N
+P 2 0 0 10 -15 -145 -40 -200 N
+P 2 0 0 10 70 -100 200 -100 N
+P 2 0 0 10 70 -100 70 -170 N
+P 3 0 0 10 70 -190 60 -140 80 -140 f
+P 2 0 0 10 70 0 200 0 N
+P 2 0 0 10 70 0 70 70 N
+P 3 0 0 10 70 90 60 40 80 40 f
+X ~ 1 300 200 100 L 40 40 0 0 P 
+X ~ 2 300 100 100 L 40 40 0 0 P 
+X ~ 5 300 -200 100 L 40 40 0 0 P 
+X ~ 4 300 -100 100 L 40 40 0 0 P 
+X ~ 3 300 0 100 L 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library

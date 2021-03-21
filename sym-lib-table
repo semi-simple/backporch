@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name backporch-rescue)(type Legacy)(uri ${KIPRJMOD}/backporch-rescue.lib)(options "")(descr ""))
+  (lib (name 35RAPC4BH3)(type Legacy)(uri ${KIPRJMOD}/project_libraries/project-symbols/35RAPC4BH3.lib)(options "")(descr ""))
+  (lib (name EL1883ISZ)(type Legacy)(uri ${KIPRJMOD}/project_libraries/project-symbols/EL1883ISZ.lib)(options "")(descr ""))
+  (lib (name MD-80SM)(type Legacy)(uri ${KIPRJMOD}/project_libraries/project-symbols/MD-80SM.lib)(options "")(descr ""))
+  (lib (name MD-90SM)(type Legacy)(uri ${KIPRJMOD}/project_libraries/project-symbols/MD-90SM.lib)(options "")(descr ""))
+)
