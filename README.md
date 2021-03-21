@@ -20,7 +20,7 @@ or [Renesas
 ISL59885](https://www.renesas.com/us/en/products/analog-products/audio-video/video-ics/video-sync-separators/isl59885-auto-adjusting-sync-separator-hd-and-sd-video))
 for an excellent sync signal. Schematics [here](generated/schematics.pdf).
 
-![Image of Backporch](generated/backporch-0.1.jpg)
+![Image of Backporch](generated/backporch-0.2.jpg)
 
 ## Inputs
 
